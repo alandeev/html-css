@@ -1,0 +1,158 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+body{
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  display: flex;
+}
+
+.app{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+  padding: 1% 10%;
+}
+
+.app div{
+  margin: 3px;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* background: #fff; */
+  padding: 5px;
+}
+
+.header h1{
+ font-size: 36px;
+ color: #000;
+}
+
+.body{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.rooms{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 5px;
+  max-height: 950px;
+  background: #fff;
+}
+
+.room{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  background: #a18cd1;
+  padding: 5px;
+}
+
+.room h2{
+  /* font-size: 40; */
+}
+
+.room div{
+  
+}
+
+.users{
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+  width: 20%;
+  background: #fff;
+}
+
+.users p{
+  margin: 5px;
+  background: #a18cd1;
+  text-align: center;
+}
