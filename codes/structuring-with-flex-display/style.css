@@ -23,7 +23,23 @@ body{
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 5px;
+  padding: 5px 0;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 20%;
+}
+
+.input input{
+  text-align: center;
+}
+
+.input button{
+  
 }
 
 .body{
@@ -49,7 +65,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
   margin: 5px 0;
-  background: #a18cd1;
+  background: #f3f3f3;
   padding: 5px;
 }
 .room div{
@@ -71,4 +87,5 @@ body{
   margin: 5px;
   background: #a18cd1;
   text-align: center;
+  color: aquamarine;
 }
