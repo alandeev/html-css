@@ -1,3 +1,7 @@
+button {
+  cursor: pointer;
+}
+
 body{
   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   display: flex;
@@ -35,11 +39,8 @@ body{
 }
 
 .input input{
+  width: 65%;
   text-align: center;
-}
-
-.input button{
-  
 }
 
 .body{
@@ -47,17 +48,17 @@ body{
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
-  /* background: #fff; */
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  background: #fff;
 }
 
 .rooms{
   display: flex;
+  min-height: 200px;
   flex-direction: column;
   width: 80%;
   padding: 5px;
   max-height: 950px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .room{
@@ -76,16 +77,18 @@ body{
 }
 
 .users{
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  padding: 5px 0;
   width: 20%;
-  background: #f3f3f3;
 }
 
-.users p{
-  margin: 5px;
-  background: #a18cd1;
-  text-align: center;
-  color: aquamarine;
+.users div{
+  margin: 2px 0;
+  padding: 5px;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #07D962;
 }
