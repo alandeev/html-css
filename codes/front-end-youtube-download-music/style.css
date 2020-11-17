@@ -6,13 +6,10 @@ body {
   display: flex;
   justify-content: center;
   height: 100vh;
-  background: #aaa;
 }
 
 .container {
-  background: #fff;
-  width: 90%;
-  margin: 30px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,6 +20,9 @@ body {
 }
 
 .formSearch {
+  -webkit-box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
+  box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
   display: flex;
 }
 
@@ -41,14 +41,21 @@ body {
 }
 
 .boxmusics {
-  background: #aaa;
-  width: 60%;
+  -webkit-box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
+  box-shadow: 6px 5px 21px 3px rgba(0,0,0,0.75);
+  width: 100%;
+  max-width: 1000px;
   height: 100%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .musics {
-  max-height: 800px;
+  width: 100%;
+  max-height: 850px;
   overflow: hidden; 
   overflow-y: scroll;
 }
@@ -58,10 +65,17 @@ body {
   padding: 0 5px;
   display: flex;
   justify-content: space-between;
-  background: #fff;
+  /* background: #aaa; */
 }
 
-.boxmusics .thumbnail img{
+.boxvideo {
+  /* background: #aaa; */
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
+
+.boxmusics img{
   width: 300px;
 }
 
@@ -92,5 +106,29 @@ body {
 .options{
   display: flex;
   flex-direction: column;
-  /* justify-content:  */
+  justify-content: flex-start;
 }
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.options a {
+  text-decoration: none;
+  background: tomato;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.options a:hover {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+

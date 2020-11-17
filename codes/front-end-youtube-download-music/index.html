@@ -8,122 +8,23 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
   <div class="container">
     <div class="formSearch">
       <form action="#">
-        <input type="text" placeholder="digite o nome da musica">
+        <input type="text" id="queryMusic" placeholder="Youtube Download Music">
         <button type="submit"></button>
       </form>
     </div> 
     <div class="boxmusics">
       <ul class="musics">
-        <div class="boxvideo">
-          <div class="video">
-            <div class="thumbnail">
-              <img src="https://i.ytimg.com/vi/bPFT4YKLzMg/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeoMQlJ37fMmNPoWH4zNrB6N7nwg" alt="">
-            </div>
-            <div class="desc">
-              <div>
-                <h2 id="title">ALOK Villa Mix Brasília 2017 → Melhores Músicas Eletrônicas Mais Tocadas 2017</h2>
-                <div>
-                  <p>Oi</p>
-                  <p>23 min</p>
-                </div>
-              </div>
-              <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit cum quas earum quod numquam. Iure unde est obcaecati ullam quia nesciunt at animi cum commodi, corporis, alias consequuntur magnam.</p>
-            </div>
-          </div>
-          <div class="options">
-            <button>BAIXAR</button>
-          </div>
-        </div>
-        <div class="boxvideo">
-          <div class="video">
-            <div class="thumbnail">
-              <img src="https://i.ytimg.com/vi/bPFT4YKLzMg/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeoMQlJ37fMmNPoWH4zNrB6N7nwg" alt="">
-            </div>
-            <div class="desc">
-              <div>
-                <h2 id="title">ALOK Villa Mix Brasília 2017 → Melhores Músicas Eletrônicas Mais Tocadas 2017</h2>
-                <div>
-                  <p>Oi</p>
-                  <p>23 min</p>
-                </div>
-              </div>
-              <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit cum quas earum quod numquam. Iure unde est obcaecati ullam quia nesciunt at animi cum commodi, corporis, alias consequuntur magnam.</p>
-            </div>
-          </div>
-          <div class="options">
-            <button>BAIXAR</button>
-          </div>
-        </div>
-        <div class="boxvideo">
-          <div class="video">
-            <div class="thumbnail">
-              <img src="https://i.ytimg.com/vi/bPFT4YKLzMg/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeoMQlJ37fMmNPoWH4zNrB6N7nwg" alt="">
-            </div>
-            <div class="desc">
-              <div>
-                <h2 id="title">ALOK Villa Mix Brasília 2017 → Melhores Músicas Eletrônicas Mais Tocadas 2017</h2>
-                <div>
-                  <p>Oi</p>
-                  <p>23 min</p>
-                </div>
-              </div>
-              <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit cum quas earum quod numquam. Iure unde est obcaecati ullam quia nesciunt at animi cum commodi, corporis, alias consequuntur magnam.</p>
-            </div>
-          </div>
-          <div class="options">
-            <button>BAIXAR</button>
-          </div>
-        </div>
-        <div class="boxvideo">
-          <div class="video">
-            <div class="thumbnail">
-              <img src="https://i.ytimg.com/vi/bPFT4YKLzMg/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeoMQlJ37fMmNPoWH4zNrB6N7nwg" alt="">
-            </div>
-            <div class="desc">
-              <div>
-                <h2 id="title">ALOK Villa Mix Brasília 2017 → Melhores Músicas Eletrônicas Mais Tocadas 2017</h2>
-                <div>
-                  <p>Oi</p>
-                  <p>23 min</p>
-                </div>
-              </div>
-              <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit cum quas earum quod numquam. Iure unde est obcaecati ullam quia nesciunt at animi cum commodi, corporis, alias consequuntur magnam.</p>
-            </div>
-          </div>
-          <div class="options">
-            <button>BAIXAR</button>
-          </div>
-        </div>
-        <div class="boxvideo">
-          <div class="video">
-            <div class="thumbnail">
-              <img src="https://i.ytimg.com/vi/bPFT4YKLzMg/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeoMQlJ37fMmNPoWH4zNrB6N7nwg" alt="">
-            </div>
-            <div class="desc">
-              <div>
-                <h2 id="title">ALOK Villa Mix Brasília 2017 → Melhores Músicas Eletrônicas Mais Tocadas 2017</h2>
-                <div>
-                  <p>3 mi. visuazalições</p>
-                </div>
-              </div>
-              <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt impedit cum quas earum quod numquam. Iure unde est obcaecati ullam quia nesciunt at animi cum commodi, corporis, alias consequuntur magnam.</p>
-            </div>
-          </div>
-          <div class="options">
-            <button>BAIXAR</button>
-            <select name="format" id="format">
-              <option value="mp3">Mp3</option>
-              <option value="mp4">Mp4</option>
-            </select>
-          </div>
-        </div>
+        
       </ul>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
