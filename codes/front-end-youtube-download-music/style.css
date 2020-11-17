@@ -1,0 +1,96 @@
+* {
+  font-family: Oswald;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: #aaa;
+}
+
+.container {
+  background: #fff;
+  width: 90%;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container div {
+  margin: 10px 0;
+}
+
+.formSearch {
+  display: flex;
+}
+
+.formSearch input {
+  text-align: center;
+  font-size: 1.3em;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  height: 40px;
+  width: 300px;
+}
+
+.formSearch button {
+  display: none;
+}
+
+.boxmusics {
+  background: #aaa;
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+}
+
+.musics {
+  max-height: 800px;
+  overflow: hidden; 
+  overflow-y: scroll;
+}
+
+.boxmusics div {
+  flex-wrap: wrap;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.boxmusics .thumbnail img{
+  width: 300px;
+}
+
+.boxmusics div .desc {
+ display: flex;
+ flex-direction: column;
+}
+
+.boxmusics div .desc div{
+  display: flex;
+  flex-direction: column;
+}
+
+.boxmusics div .desc #title{
+  max-width: 400px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.boxmusics div .desc div p {
+  color: #aaa;
+}
+
+#description{
+  max-width: 400px;
+}
+
+.options{
+  display: flex;
+  flex-direction: column;
+  /* justify-content:  */
+}
