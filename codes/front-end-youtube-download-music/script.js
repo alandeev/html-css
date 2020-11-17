@@ -1,12 +1,6 @@
 const queryMusic = $("#queryMusic");
 
 var music = "";
-async function downloadMusic(videoID){
-  // console.log({videoID})
-  // const baseURL = `https://www.youtube.com/watch?v=${videoID}`
-  // const response = (await axios.get(`http://localhost:3333/downloader?url=${baseURL}`)).data;
-  // music = response;
-}
 
 function createVideoBox(video){
   try{
@@ -53,9 +47,10 @@ function createVideoBox(video){
   const optionsDiv = document.createElement('div');
   optionsDiv.className = "options";
 
+  const baseURL = `https://www.youtube.com/watch?v=${videoId}`
+
   const downloadButton = document.createElement('a');
   downloadButton.textContent = "BAIXAR";
-  const baseURL = `https://www.youtube.com/watch?v=${videoId}`
   downloadButton.href = `http://localhost:3333/downloader?url=${baseURL}`;
 
   const plazarento = document.createElement("p");
