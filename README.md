@@ -12,4 +12,4 @@ _Repository to learn CSS and implement in the my projects._
 ![front-end-youtube-download-music](https://github.com/alandev2/html-css/blob/main/codes/front-end-youtube-download-music/example.gif?raw=true "Example giff")
 
 *instagram-clone 40/100%*
-![instagram-clone](https://github.com/alandev2/html-css/blob/main/codes/instagram-clone/example.png)
+![instagram-clone](https://github.com/alandev2/html-css/blob/main/codes/instagram-clone/assets/example.png)
